@@ -11,7 +11,7 @@ export const getServerSideProps: GetServerSideProps = async (Context) => {
   const id = Context.query.id;
   const link = await client.link.findFirst({
     where: {
-      id,
+      id: id as string,
     },
   });
   if (link?.id) {
