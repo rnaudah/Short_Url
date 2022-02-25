@@ -96,7 +96,9 @@ const Home: NextPage = () => {
                 <>
                   <h1 className="text-5xl font-bold text-white">생성완료!</h1>
                   <h1 className="my-5 text-3xl font-bold text-blue-500">
-                    {`https://localhost:3000/i/${getValues("id")}`}
+                    {`https://short-url-rnaudah.vercel.app/i/${getValues(
+                      "id"
+                    )}`}
                   </h1>
                 </>
               )}
